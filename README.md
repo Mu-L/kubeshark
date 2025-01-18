@@ -3,14 +3,11 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/kubeshark/kubeshark/blob/main/LICENSE">
-        <img alt="GitHub License" src="https://img.shields.io/github/license/kubeshark/kubeshark?logo=GitHub&style=flat-square">
-    </a>
     <a href="https://github.com/kubeshark/kubeshark/releases/latest">
         <img alt="GitHub Latest Release" src="https://img.shields.io/github/v/release/kubeshark/kubeshark?logo=GitHub&style=flat-square">
     </a>
     <a href="https://hub.docker.com/r/kubeshark/worker">
-      <img alt="Docker pulls" src="https://img.shields.io/docker/pulls/kubeshark/kubeshark?color=%23099cec&logo=Docker&style=flat-square">
+      <img alt="Docker pulls" src="https://img.shields.io/docker/pulls/kubeshark/worker?color=%23099cec&logo=Docker&style=flat-square">
     </a>
     <a href="https://hub.docker.com/r/kubeshark/worker">
       <img alt="Image size" src="https://img.shields.io/docker/image-size/kubeshark/kubeshark/latest?logo=Docker&style=flat-square">
@@ -25,9 +22,8 @@
 
 <p align="center">
   <b>
-  <span>NEW: </span><a href="https://github.com/kubeshark/kubeshark/releases/tag/39.4">Version 39.4</a> is out, introducing
-  <a href="https://docs.kubeshark.co/en/automation_scripting">Scripting</a>,
-  <a href="https://docs.kubeshark.co/en/automation_hooks">L4/L7 hooks</a>, and so much more...
+	  Want to see Kubeshark in action,  right now? Visit this
+	  <a href="https://demo.kubeshark.co/">live demo deployment</a> of Kubeshark.
   </b>
 </p>
 
@@ -53,16 +49,19 @@ Running any of the :point_up: above commands will open the [Web UI](https://docs
 
 ### Homebrew
 
-[Homebrew](https://brew.sh/) :beer: users can add Kubeshark formulae with:
-
-```shell
-brew tap kubeshark/kubeshark
-```
-
-and install Kubeshark CLI with:
+[Homebrew](https://brew.sh/) :beer: users install Kubeshark CLI with:
 
 ```shell
 brew install kubeshark
+```
+
+### Helm
+
+Add the helm repository and install the chart:
+
+```shell
+helm repo add kubeshark https://helm.kubeshark.co
+‍helm install kubeshark kubeshark/kubeshark
 ```
 
 ## Building From Source
